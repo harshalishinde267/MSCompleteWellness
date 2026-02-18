@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ContactPage.css */
 body {
   margin: 0;
@@ -119,3 +120,126 @@ footer {
   color: white;
   text-decoration: none;
 }
+=======
+/* ContactPage.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contact-page {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #ffb6f9, #ff5bbf); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.936);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  /* position: relative; */
+}
+
+/* LEFT SIDE with curve */
+.contact-left {
+  flex: 1;
+  background: #ffe0f2;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e60073;
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.contact-left img {
+  width: 120px;
+}
+
+.contact-right {
+  flex: 1;
+  padding: 50px;
+  background: #ffffffde;
+}
+
+.contact-right h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #e60073;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: #ff5bbf;
+  box-shadow: 0px 0px 5px rgba(255, 91, 191, 0.5);
+}
+
+.contact-right button {
+  background: #ff5bbf;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background: #e60073;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+>>>>>>> c768e10a8b9240f8cb33177b72ef395fd7c67bc6

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Navbar */
 .navbar1 {
   position: fixed;
@@ -48,3 +49,55 @@
   /* color: #ffd700; */
   font-weight: bold;
 }
+=======
+/* General Navbar */
+.navbar1 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 12px 20px;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #e7019c; /* Always static color */
+}
+
+/* Container inside navbar */
+.nav-container1 {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.logo1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* Desktop nav links */
+.nav-links1 {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links1 a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links1 a:hover {
+  /* color: #ffd700; */
+  font-weight: bold;
+}
+>>>>>>> c768e10a8b9240f8cb33177b72ef395fd7c67bc6

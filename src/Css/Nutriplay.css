@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .nutriplay-container {
   /* background: linear-gradient(135deg, #ffb6f9, #ff5bbf); */
   min-height: 100vh;
@@ -47,3 +48,54 @@
     grid-template-columns: 1fr;
   }
 }
+=======
+.nutriplay-container {
+  /* background: linear-gradient(135deg, #ffb6f9, #ff5bbf); */
+  min-height: 100vh;
+  padding: 90px;
+  text-align: center;
+}
+.game-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.game-card {
+  background: #ffe0f2;
+  border: 3px solid #f26fc6;
+  border-radius: 20px;
+  padding: 20px;
+  /* margin: 20px auto; */
+  width: 100%; /* ✅ wider cards */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #e7019c;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.start-btn:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .game-cards {
+    grid-template-columns: 1fr;
+  }
+}
+>>>>>>> c768e10a8b9240f8cb33177b72ef395fd7c67bc6

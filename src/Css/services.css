@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .services-section {
   padding: 60px 20px;
   background: rgb(245, 245, 245);
@@ -59,3 +60,66 @@
   color: #555;
   line-height: 1.5;
 }
+=======
+.services-section {
+  padding: 60px 20px;
+  background: rgb(245, 245, 245);
+}
+
+.services-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* always 2 per row */
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.service-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon-box {
+  background: #f5f8fa;
+  border-radius: 999px;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+>>>>>>> c768e10a8b9240f8cb33177b72ef395fd7c67bc6
