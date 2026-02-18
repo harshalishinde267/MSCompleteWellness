@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* === Playful gradient background with blobs === */
 .swap-page {
   min-height: 70vh;
@@ -160,7 +159,9 @@
   border-radius: 18px;
   padding: 16px 14px;
   cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease,
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
     border-color 160ms ease;
 }
 .swap-option img {
@@ -226,7 +227,9 @@
   border: none;
   font-weight: 800;
   cursor: pointer;
-  transition: transform 120ms ease, filter 120ms ease;
+  transition:
+    transform 120ms ease,
+    filter 120ms ease;
 }
 .swap-cta:hover {
   transform: translateY(-2px);
@@ -288,7 +291,7 @@
   background: #ffe3f2;
   border-color: #e7019c;
 }
-=======
+
 /* === Playful gradient background with blobs === */
 .swap-page {
   min-height: 70vh;
@@ -450,7 +453,9 @@
   border-radius: 18px;
   padding: 16px 14px;
   cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease,
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
     border-color 160ms ease;
 }
 .swap-option img {
@@ -516,7 +521,9 @@
   border: none;
   font-weight: 800;
   cursor: pointer;
-  transition: transform 120ms ease, filter 120ms ease;
+  transition:
+    transform 120ms ease,
+    filter 120ms ease;
 }
 .swap-cta:hover {
   transform: translateY(-2px);
@@ -578,4 +585,3 @@
   background: #ffe3f2;
   border-color: #e7019c;
 }
->>>>>>> c768e10a8b9240f8cb33177b72ef395fd7c67bc6
