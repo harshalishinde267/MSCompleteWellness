@@ -1,4 +1,4 @@
-import DermatologyVideos from "../components/DermatologyVideos";
+// import DermatologyVideos from "../components/DermatologyVideos";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -10,7 +10,6 @@ function Services() {
         <>
             <Navbar />
             <Hero />
-            {/* <DermatologyVideos /> */}
             <OurServices />
             <Footer />
         </>
