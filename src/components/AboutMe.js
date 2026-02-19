@@ -1,8 +1,9 @@
 import React from "react";
 import "../Css/About.css";
-import aboutImg from "../Images/About.png"; // replace with your image path
+import aboutImg from "../Images/About.png";
 import Navbar1 from "./Navbar1";
 import Footer from "./Footer";
+
 
 export default function About() {
     return (
