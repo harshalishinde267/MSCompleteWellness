@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import "../Css/BlogDetails.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Facebook, Linkedin, Instagram, Twitter } from "lucide-react";
 
 const blogData = {
   1: {
@@ -11,44 +12,17 @@ const blogData = {
     image:
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=60",
     content: `
-      <p>Staying informed about your well-being is the first step toward a healthier lifestyle. Our expert-driven health insights provide valuable information on nutrition, fitness, mental wellness, and preventive care. Whether you're looking for practical tips, the latest research, or personalized wellness strategies, we offer reliable content to guide your journey toward better health.</p>
-      <p>From understanding the impact of daily habits to making informed decisions about your diet and exercise, our blog is designed to educate and inspire. We believe that small, consistent changes lead to long-term success, and our goal is to empower you with the knowledge and motivation needed to achieve a balanced and fulfilling life.</p>
-
+      <p>Staying informed about your well-being is the first step toward a healthier lifestyle.</p>
       <blockquote>
-        Harmonize Your Energy Centers for Inner Peace and Well-Being Through the Transformative Power
-        of Chakra Balancing with Yoga and Meditation Unlocking Physical Vitality, Emotional Stability, and Spiritual Growth.
+        Harmonize Your Energy Centers for Inner Peace and Well-Being.
       </blockquote>
-
-      <p>From understanding the impact of daily habits to making informed decisions about your diet and exercise, our blog is designed to educate and inspire. We believe that small, consistent changes lead to long-term success, and our goal is to empower you with the knowledge and motivation needed to achieve a balanced and fulfilling life.</p>
-
       <h2>Unlock your best health</h2>
-
-      <p>From understanding the impact of daily habits to making informed decisions about your diet and exercise, our blog is designed to educate and inspire. We believe that small, consistent changes lead to long-term success.</p>
-
       <ul>
-        <li>Discover expert-backed advice tailored to help you improve your nutrition, fitness, and well-being.</li>
-        <li>Stay informed with the latest research and evidence-based strategies.</li>
-        <li>Learn how mental well-being and physical health are interconnected.</li>
-        <li>Get practical guidance on building long-term healthy habits.</li>
-        <li>Gain encouragement from health professionals to stay on track with your wellness goals.</li>
+        <li>Discover expert-backed advice.</li>
+        <li>Stay informed with latest research.</li>
       </ul>
-
-      <p>From understanding the impact of daily habits to making informed decisions about your diet and exercise, our blog is designed to educate and inspire. We believe that small, consistent changes lead to long-term success.</p>
-
     `,
     tags: ["Healthcoach", "Activelifestyle", "Stressrelief"],
-  },
-  2: {
-    title: "Healthy Nutrition Habits",
-    content: "Full article for blog 2...",
-  },
-  3: {
-    title: "Fitness Made Simple",
-    content: "Full article for blog 3...",
-  },
-  4: {
-    title: "Mindfulness for Busy Lives",
-    content: "Full article for blog 4...",
   },
 };
 
@@ -67,7 +41,7 @@ export default function BlogDetail() {
         <div className="blog-detail">
           {/* Header Section */}
           <div className="blog-header py-16">
-            <h1 className="text-4xl font-bold">{post.title}</h1>{" "}
+            <h1 className="text-4xl font-bold">{post.title}</h1>
             <p className="mt-3 text-sm">
               👤 {post.author} | 📅 {post.date}
             </p>
@@ -80,12 +54,11 @@ export default function BlogDetail() {
               alt={post.title}
               className="blog-detail-image"
             />
-
             <article
               className="blog-detail-content"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
-
+            {/* Tags + Social */}
             <div className="tags-share-row">
               {post.tags && (
                 <div className="blog-tags">
@@ -98,35 +71,60 @@ export default function BlogDetail() {
                 </div>
               )}
 
+              {/* SOCIAL ICONS */}
               <div className="social-share">
-                <a href="#" className="icon fb">
-                  f
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="social-icon"
+                >
+                  <Facebook size={20} />
                 </a>
-                <a href="#" className="icon in">
-                  in
+
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="social-icon"
+                >
+                  <Linkedin size={20} />
                 </a>
-                <a href="#" className="icon ig">
-                  📷
+
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="social-icon"
+                >
+                  <Instagram size={20} />
                 </a>
-                <a href="#" className="icon tw">
-                  X
+
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                  className="social-icon"
+                >
+                  <Twitter size={20} />
                 </a>
               </div>
-            </div>
-
+            </div>{" "}
+            {/* ✅ THIS DIV WAS MISSING */}
             {/* Back link */}
             <div className="mt-8">
-              <Link
-                to="/Blog"
-                className="back-to-blog"
-                //   className="text-pink-600 hover:underline font-semibold"
-              >
+              <Link to="/Blog" className="back-to-blog">
                 ← Back to Blog
               </Link>
             </div>
           </div>
         </div>
       </section>
+
       {/* Footer */}
       <Footer />
     </>
